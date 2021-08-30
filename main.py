@@ -58,7 +58,6 @@ async def start(bot, update):
 
 @FayasNoushad.on_message(
     filters.channel & (
-        filters.text if FILTER_TEXT else None |
         filters.audio if FILTER_AUDIO else None |
         filters.document if FILTER_DOCUMENT else None |
         filters.photo if FILTER_PHOTO else None |
